@@ -172,9 +172,7 @@ const CardNav: React.FC<CardNavProps> = ({
             <div className="hamburger-line" />
           </div>
 
-          <div className="logo-container">
-            <img src={logo} alt={logoAlt} className="logo" />
-          </div>
+{/* logo placement in middle  */}
 
           <button
             type="button"

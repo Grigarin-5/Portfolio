@@ -2,6 +2,8 @@
 
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
+import GlassButton from './GlassButton';
+import ProfileCard from './react-bits/ProfileCard';
 
 const Hero = () => {
   return (
@@ -12,10 +14,10 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-4xl sm:text-6xl font-bold text-white mb-6">
+          {/* <h1 className="text-4xl sm:text-6xl font-bold text-white mb-6">
             Hi, I'm{' '}
             <span className="text-purple-400">Your Name</span>
-          </h1>
+          </h1> */}
 
           <motion.p
             className="text-xl sm:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto"
@@ -23,28 +25,29 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            A passionate full-stack developer creating amazing digital experiences
+            {/* A passionate full-stack developer creating amazing digital experiences */}
           </motion.p>
 
           <motion.div
-            className="flex flex-col sm:flex-row gap-4 justify-center"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            className="flex justify-center mt-20 pt-8"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <a
-              href="#projects"
-              className="bg-purple-600 text-white px-8 py-3 rounded-lg hover:bg-purple-700 transition-colors font-medium"
-            >
-              View My Work
-            </a>
-            <a
-              href="#contact"
-              className="border-2 border-purple-400 text-purple-400 px-8 py-3 rounded-lg hover:bg-purple-400 hover:text-white transition-colors font-medium"
-            >
-              Get In Touch
-            </a>
+            <ProfileCard
+              name="Grigarin Baby"
+              title="Frontend Developer"
+              handle="javicodes"
+              status="Online"
+              contactText="Contact Me"
+              avatarUrl="/avatar.jpg"
+              showUserInfo={true}
+              enableTilt={true}
+              enableMobileTilt={false}
+              onContactClick={() => console.log('Contact clicked')}
+            />
           </motion.div>
+
         </motion.div>
 
         <motion.div

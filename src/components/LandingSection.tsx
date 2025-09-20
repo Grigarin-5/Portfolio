@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import BlurText from './BlurText';
+import BlurText from './react-bits/BlurText';
 
 const LandingSection: React.FC = () => {
   const [showScrollHint, setShowScrollHint] = useState(false);

@@ -8,7 +8,7 @@ import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import LandingPage from '@/components/LandingPage';
-import LiquidEther from '@/components/LiquidEther';
+import LiquidEther from '@/components/react-bits/LiquidEther';
 
 export default function Home() {
   const [showMainPage, setShowMainPage] = useState(false);
@@ -36,7 +36,7 @@ export default function Home() {
         }}
       >
         <LiquidEther
-          colors={['#3B0764', '#7C3AED', '#A855F7', '#EC4899', '#F97316']}
+          colors={['#667eea', '#764ba2', '#f093fb']}
           mouseForce={50}
           cursorSize={200}
           isViscous={false}

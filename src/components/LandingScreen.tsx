@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import BlurText from './BlurText';
+import BlurText from './react-bits/BlurText';
 
 interface LandingScreenProps {
   onAnimationComplete?: () => void;

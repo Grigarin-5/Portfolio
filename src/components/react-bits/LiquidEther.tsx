@@ -54,7 +54,7 @@ interface LiquidEtherWebGL {
   dispose: () => void;
 }
 
-const defaultColors = ['#5227FF', '#FF9FFC', '#B19EEF'];
+const defaultColors = ['#667eea', '#764ba2', '#f093fb'];
 
 export default function LiquidEther({
   mouseForce = 20,
@@ -117,8 +117,8 @@ export default function LiquidEther({
     }
 
     const paletteTex = makePaletteTexture(colors);
-    // Hard-code transparent background vector (alpha 0)
-    const bgVec4 = new THREE.Vector4(0, 0, 0, 0);
+    // Black background color for cursor interaction
+    const bgVec4 = new THREE.Vector4(0.0, 0.0, 0.0, 1.0); // Black background
 
     class CommonClass {
       width = 0;
@@ -1226,7 +1226,8 @@ export default function LiquidEther({
         fontSize: '12px',
         zIndex: 1000
       }}>
-        LiquidEther Loaded
+
+
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 'use client';
 
-import CardNav from './CardNav';
+import CardNav from './react-bits/CardNav';
 
 const Header = () => {
   const items = [
@@ -39,7 +39,7 @@ const Header = () => {
       logo="/next.svg"
       logoAlt="Portfolio Logo"
       items={items}
-      baseColor="#fff"
+      baseColor="transparent"
       menuColor="#000"
       buttonBgColor="#111"
       buttonTextColor="#fff"

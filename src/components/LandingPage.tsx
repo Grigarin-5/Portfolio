@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
-import BlurText from './BlurText';
+import BlurText from './react-bits/BlurText';
 
 interface LandingPageProps {
   onComplete: () => void;
